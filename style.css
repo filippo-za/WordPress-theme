@@ -1,0 +1,234 @@
+/*
+Theme name: Tag Burger
+Theme URI: https://mywebsite.com
+Author: Filippo Zarba
+Author URI: https://filippozarba.com
+Description: theme basic
+Version: 1.0
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: startwordpress
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+/* START SETTINGS */
+
+img {
+  height: auto;
+}
+
+.img-res {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  margin-bottom: 25px;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 800;
+}
+h2 {
+  font-size: 40px;
+  font-weight: 800;
+}
+h3 {
+  font-size: 30px;
+  font-weight: 800;
+}
+h4 {
+  font-size: 25px;
+  font-weight: 800;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  h4 {
+    font-size: 15px;
+  }
+}
+
+.container,
+article {
+  margin: 10px;
+  padding: 10px;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.page .container {
+  max-width: 1400px;
+}
+
+/* HEADER */
+
+.header {
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.8);
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+.logo {
+  font-size: 30px;
+  display: inline-block;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.navbar li {
+  display: inline-block;
+}
+
+.navbar li a {
+  color: #333;
+  display: block;
+  padding: 10px;
+}
+
+.navbar li.modification a {
+  background: #c72e2e;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.navbar ul {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 100%;
+    text-align: center;
+  }
+  .header {
+    display: block;
+  }
+
+  .navbar ul {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* HERO SECTION */
+
+.hero-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-section h1 {
+  padding: 80px 10px;
+}
+
+.page .hero-section h1 {
+  padding: 150px 10px;
+}
+
+.container-img {
+  background: #dcf6e2;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 60px;
+}
+
+.container-img img {
+  margin-bottom: -60px;
+  border-radius: 10px;
+}
+
+/* CONTACTS */
+
+.nf-form-title h3 {
+  display: none;
+}
+
+.nf-form-fields-required {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .nf-form-title h3 {
+    display: none;
+  }
+
+  .nf-form-fields-required {
+    padding: 20px;
+  }
+}
+
+/* FOOTER */
+
+.footer {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  background: #eee;
+}
+
+.privacy-policy {
+  color: #c72e2e;
+}
+
+/* GUTENBERG BLOCKS */
+
+.override .wp-block-media-text__media {
+  background: #dcf6e2;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 60px;
+}
+
+.override .wp-block-media-text__media img {
+  margin-bottom: -60px;
+  border-radius: 10px;
+}
